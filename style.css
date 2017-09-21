@@ -1,0 +1,84 @@
+
+/* gwiazdka to selektor uniwersalny */
+
+* {
+		color: #0080c0;
+		}
+
+
+body
+	{
+		font-family: Verdana, Arial, sans-serif;
+		font-size: 12pt;
+		color: #0080c0;
+		background-color: #ffff00;
+		margin: 10mm;
+		}
+
+p
+	{
+		text-align: justify;
+		}
+
+
+/* Selektor potomka (zale¿no¶ci pomiêdzy selektorami) */
+
+p b    /* odnosimy siê do wszystkich "pogrubieñ" które znajduj± siê w paragrafach, pod warunkiem ¿e pogrubienie jest w paragrafie */
+	{
+		color: #ff0080;
+	}
+
+
+p i b /* pod warunkiem ¿e jest to zawarte i w paragafie i pochylone i pogrubione */
+	{
+		color: #408080;
+	}
+
+
+ol ul li /* pod warunkiem ¿e li bêdziê w ul a ul bêdzie w ol */
+	{
+		 color: #800000;
+	}
+
+/* selektor dziecka */
+
+p > b /* b zadzia³a je¿eli bêdzie bezpo¶rednio w akapicie */
+	{
+		color: #ffffff;
+	}
+
+
+i + b /* selektor braci */
+	{
+		 color: #5e5e00;
+	}
+
+b, i /* wszystkie znaczniki b, i przyjm± ten kolor je¿eli nie spe³niaj± innych za³o¿eñ */
+	{
+		 color: #ff80c0;
+	}
+
+p[title="wazny"]
+	{
+		color: black;
+	}
+
+p[lang="polski"]
+	{
+		color: green;
+	}
+
+p.wazne /* przypisywanie klas */
+	{
+		color: #400040;
+	}
+
+*.wazne /* przypisanie klasy ogólnej dla dowolnego selektora*/
+	{
+		color: red;
+	}
+
+b#niebieski /* przypisanie identyfikatora */ /* identyfikator mo¿emy przypisaæ tylko raz, a klasy dowolnie */
+	{
+		color: blue;
+	} 
